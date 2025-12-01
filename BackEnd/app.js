@@ -22,17 +22,7 @@ require("./models/connection");
 
 const indexRouter = require("./routes/index");
 const usersRouter = require("./routes/users");
-const top3Router = require("./routes/top3");
-const shopRouter = require("./routes/shop");
-const paymentsRouter = require('./routes/payments');
-const stripeWebhook = require('./routes/stripeWebhook');
-const shippingRouter = require('./routes/shipping');
-
 const mcpRouter = require('./routes/mcp.routes');
-const paymentConfirmedRouter = require("./routes/payment-confirmed");
-const cartRouter = require("./routes/cart-reservation");
-
-const analyticsRouter = require('./routes/analytics');
 
 const app = express();
 
@@ -66,8 +56,6 @@ const allowedOrigins = [
 
 app.use(logger("dev"));
 
-app.use('/payments', stripeWebhook);
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -75,17 +63,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
-
 app.use("/users", usersRouter);
-app.use("/top3", top3Router);
-app.use("/shop", shopRouter);
-app.use('/payments', paymentsRouter);
-app.use('/shipping', shippingRouter);
-app.use('/cart', cartRouter)
-
-app.use("/", paymentConfirmedRouter);
-app.use('/mcp', mcpRouter);
-app.use('/analytics', analyticsRouter); 
+app.use('/mcp', mcpRouter); 
 
 // Errors
 
