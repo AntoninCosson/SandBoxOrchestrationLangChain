@@ -1,0 +1,39 @@
+
+
+.logoutcontainer{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.5);
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    z-index: 150;
+}
+
+.logoutDiv{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column-reverse;
+    background-color: white;
+    width: 10%;
+    height: 13%;
+    position: absolute;
+    border-radius: 8px;
+}
+
+.logout{
+    margin-right: 1%;
+    cursor: pointer;
+    
+}
+
+.closeLogout{
+    left: 15%;
+    position: relative;
+    height: 23%;
+    cursor: pointer;
+    scale: 0.7;
+    
+}

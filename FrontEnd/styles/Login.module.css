@@ -1,0 +1,161 @@
+
+.body{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.5);
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    z-index: 150;
+    /* scale: 1.34; */
+}
+.overlay {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 18%;
+    height: 38%;
+    overflow: hidden;
+}
+
+.overlaySignup {
+    height: 48%;
+  }
+
+.SignInUpBody{
+    z-index: 10;
+    position: absolute;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 27%;
+    overflow: hidden;
+}
+
+.login{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.5);
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    z-index: 150;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+}
+.txt1{
+    margin: 17%;
+
+}
+.divBtn{
+    padding-bottom: 13%;
+    border-bottom: dashed rgba(0,0,0,0.2);
+}
+.buttonSignUp{
+    cursor: pointer;
+    margin-bottom: 7%;
+}
+.divBtn2{
+    padding-bottom: 13%;
+   
+}
+.buttonSignin{
+    cursor: pointer;
+    margin-bottom: 6%;
+}
+.txt2{
+    margin: 11%;
+    margin-top: 11%;
+}
+
+
+
+
+.close{
+    height: 12px;
+    width: 20px;
+    position: absolute;
+    top: 7%;
+    right: 7%;
+    cursor: pointer;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding:0 23px;
+    width: 80%;
+    border-radius: 8px;
+}
+.ThisChairsign{
+    margin-bottom: 23%;
+}
+
+.input{
+    width: 150%;
+    margin: 9%;
+    height: 9%;
+    padding:10% 6%;
+    font-size: 13px;
+
+}
+.signin{
+    margin-top: 33%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.closeOut{
+    height: 15%;
+    width: 15%;
+    position: absolute;
+    align-self: right;
+    justify-self: right;
+    top: -10%;
+    right: -10%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.buttonSignin{
+    cursor: pointer;
+}

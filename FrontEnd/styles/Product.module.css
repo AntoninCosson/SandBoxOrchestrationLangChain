@@ -1,0 +1,133 @@
+.body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 30%));
+    gap: 1%;
+    padding:1% 0;
+    margin: 0 auto;
+    width: 90%;
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.containerProducts{
+    width: 100%;
+    height: 100%;
+    font-size: 1.2vw;
+    scale: 0.8;
+}
+
+.Product{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    /* background-color: aqua; */
+    
+}
+
+.Product:hover .infos {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(2%);
+    
+}
+
+.Product:hover .img{
+    opacity: 0.2;
+    transform: scale(98%);
+    transform: translateY(1%);
+    transition: opacity 0.15s, transform 0.25s;
+}
+
+.infos{
+    position: absolute;
+    z-index: 2;
+    width: 90%;
+    height: 85%;
+    background: rgba(255,255,255,0.9);
+    padding: 4% 5%;
+    box-sizing: border-box;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: opacity 0.25s, transform 0.25s;
+    
+}
+
+.btnAddToCart{
+    cursor: pointer;
+}
+
+.imgDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.img{
+    position: relative;
+    width: 110%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.descriptionDiv{
+    width: 100%;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 69%;
+    margin-bottom: 3%;
+    position: relative;
+    width: 100%;
+    font-size: 1.3vw;
+}
+
+.btnLike{
+    margin-top: 1%;
+    margin-bottom: 3%;
+    transition: transform 0.1s;
+}
+
+.btnJump {
+  animation: jumpAnim 0.3s;
+}
+
+@keyframes jumpAnim {
+  0% { transform: translateY(0);}
+  30% { transform: translateY(-15px);}
+  60% { transform: translateY(0);}
+  100% { transform: translateY(0);}
+}
+
+.btnAndanimDiv{
+    height: 100%;
+}
+
+.AddedAnimDiv {
+    position: absolute;
+    top: -39%;
+    transform: translate(188%, 33%);
+    z-index: 1000;
+    pointer-events: none;
+    rotate: 23deg;
+}
+
+.AddedAnim{
+    width: 267%
+}
+
+
+
+.btnAddToCart{
+    margin-top: 10%;
+}

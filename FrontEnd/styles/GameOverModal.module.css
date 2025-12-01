@@ -1,0 +1,75 @@
+.overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.5);
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    z-index: 150;
+}
+
+.modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 27%;
+}
+
+.gameOverSvg{
+    width: 60%;
+    margin-top: 6%;
+}
+
+.bestScoreDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bestScoreSvg{
+    width: 29%;    
+}
+.bestScoreTxt{
+    font-size: 1.5vw;
+    margin-left: 3%;
+}
+
+
+.scoreDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scoreSvg{
+    width: 33%;
+}
+.scoreTxt{
+    font-size: 1.5vw;
+    margin-left: 3%;
+}
+
+.top3Svg{
+    margin-top: 8%;
+    width: 27%;
+}
+
+.usersBestScore{
+    margin-top: 5%;
+}
+
+.usersBestScoreTxt {
+    margin: 5%;
+    font-size: 1.3vw;
+}
+
+.pressStart{
+    margin-top: 12%;
+    font-size: 0.8vw;
+}

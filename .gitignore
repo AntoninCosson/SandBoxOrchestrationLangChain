@@ -1,0 +1,48 @@
+# === Dependencies ===
+**/node_modules/
+.pnp
+.pnp.js
+
+# === Next.js builds & caches ===
+**/.next/
+out/
+
+# === Tests & coverage ===
+coverage/
+
+# === Production builds ===
+build/
+dist/
+
+# === Environment files ===
+.env
+.env.*
+!.env.example
+
+# === Ignore safety check script ===
+check-safety.sh
+
+# === Ignore all bash scripts ===
+*.sh
+
+# === / Editors ===
+.DS_Store
+**/.DS_Store
+.vscode/
+.idea/
+
+# === Local artifacts ===
+Archive.zip
+Ressourcess/
+localhost_*.json
+products_test_*.json
+
+# === Logs & debug ===
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# === Vercel ===
+.vercel
